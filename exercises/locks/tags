@@ -1,0 +1,80 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAX	clist.c	25;"	d	file:
+MAX	list.c	25;"	d	file:
+args	clist.c	/^typedef struct {int inc; int id; cell *list;} args;$/;"	t	typeref:struct:__anon2	file:
+args	futex.c	/^typedef struct args {int inc; int id; volatile int *mutex;} args;$/;"	s	file:
+args	futex.c	/^typedef struct args {int inc; int id; volatile int *mutex;} args;$/;"	t	typeref:struct:args	file:
+args	list.c	/^typedef struct {int inc; int id; cell *list;} args;$/;"	t	typeref:struct:__anon1	file:
+args	peterson.c	/^typedef struct args {int inc; int id;} args;$/;"	s	file:
+args	peterson.c	/^typedef struct args {int inc; int id;} args;$/;"	t	typeref:struct:args	file:
+args	swap.c	/^typedef struct args {int inc; int id; volatile int *mutex;} args;$/;"	s	file:
+args	swap.c	/^typedef struct args {int inc; int id; volatile int *mutex;} args;$/;"	t	typeref:struct:args	file:
+bench	clist.c	/^void *bench(void *arg) {$/;"	f
+bench	list.c	/^void *bench(void *arg) {$/;"	f
+cell	clist.c	/^typedef struct cell {$/;"	s	file:
+cell	clist.c	/^} cell;$/;"	t	typeref:struct:cell	file:
+cell	list.c	/^typedef struct cell {$/;"	s	file:
+cell	list.c	/^} cell;$/;"	t	typeref:struct:cell	file:
+count	futex.c	/^volatile int count = 0;$/;"	v
+count	peterson.c	/^volatile int count = 0;$/;"	v
+count	swap.c	/^volatile int count = 0;$/;"	v
+dummy	clist.c	/^cell dummy = {-1, &sentinel, PTHREAD_MUTEX_INITIALIZER};$/;"	v
+dummy	list.c	/^cell dummy = {-1, &sentinel};$/;"	v
+futex_wait	futex.c	/^int futex_wait(volatile int *futexp) {$/;"	f
+futex_wake	futex.c	/^void futex_wake(volatile int *futexp) {$/;"	f
+global	clist.c	/^cell *global = &dummy;$/;"	v
+global	futex.c	/^volatile int global = 0;$/;"	v
+global	list.c	/^cell *global = &dummy;$/;"	v
+global	swap.c	/^volatile int global = 0;$/;"	v
+id	clist.c	/^typedef struct {int inc; int id; cell *list;} args;$/;"	m	struct:__anon2	file:
+id	futex.c	/^typedef struct args {int inc; int id; volatile int *mutex;} args;$/;"	m	struct:args	file:
+id	list.c	/^typedef struct {int inc; int id; cell *list;} args;$/;"	m	struct:__anon1	file:
+id	peterson.c	/^typedef struct args {int inc; int id;} args;$/;"	m	struct:args	file:
+id	swap.c	/^typedef struct args {int inc; int id; volatile int *mutex;} args;$/;"	m	struct:args	file:
+inc	clist.c	/^typedef struct {int inc; int id; cell *list;} args;$/;"	m	struct:__anon2	file:
+inc	futex.c	/^typedef struct args {int inc; int id; volatile int *mutex;} args;$/;"	m	struct:args	file:
+inc	list.c	/^typedef struct {int inc; int id; cell *list;} args;$/;"	m	struct:__anon1	file:
+inc	peterson.c	/^typedef struct args {int inc; int id;} args;$/;"	m	struct:args	file:
+inc	swap.c	/^typedef struct args {int inc; int id; volatile int *mutex;} args;$/;"	m	struct:args	file:
+increment	futex.c	/^void *increment(void *arg) {$/;"	f
+increment	peterson.c	/^void *increment(void *arg) {$/;"	f
+increment	swap.c	/^void *increment(void *arg) {$/;"	f
+list	clist.c	/^typedef struct {int inc; int id; cell *list;} args;$/;"	m	struct:__anon2	file:
+list	list.c	/^typedef struct {int inc; int id; cell *list;} args;$/;"	m	struct:__anon1	file:
+lock	futex.c	/^int lock(volatile int *lock) {$/;"	f
+lock	peterson.c	/^void lock(int id) {$/;"	f
+lock	swap.c	/^int lock(volatile int *mutex) {$/;"	f
+main	clist.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	futex.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	list.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	peterson.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	swap.c	/^int main(int argc, char *argv[]) {$/;"	f
+mutex	clist.c	/^  pthread_mutex_t mutex;$/;"	m	struct:cell	file:
+mutex	clist.c	/^pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+mutex	futex.c	/^typedef struct args {int inc; int id; volatile int *mutex;} args;$/;"	m	struct:args	file:
+mutex	list.c	/^pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+mutex	swap.c	/^typedef struct args {int inc; int id; volatile int *mutex;} args;$/;"	m	struct:args	file:
+next	clist.c	/^  struct cell *next;$/;"	m	struct:cell	typeref:struct:cell::cell	file:
+next	list.c	/^  struct cell *next;$/;"	m	struct:cell	typeref:struct:cell::cell	file:
+request	futex.c	/^volatile int request[2] = {0,0};$/;"	v
+request	peterson.c	/^volatile int request[2] = {0,0};$/;"	v
+request	swap.c	/^volatile int request[2] = {0,0};$/;"	v
+sentinel	clist.c	/^cell sentinel = {MAX, NULL, PTHREAD_MUTEX_INITIALIZER};$/;"	v
+sentinel	list.c	/^cell sentinel = {MAX, NULL};$/;"	v
+toggle	clist.c	/^void toggle(cell *lst, int r) {$/;"	f
+toggle	list.c	/^void toggle(cell *lst, int r) {$/;"	f
+try	futex.c	/^int try(volatile int *mutex) {$/;"	f
+try	swap.c	/^int try(volatile int *mutex) {$/;"	f
+turn	futex.c	/^volatile int turn = 0;$/;"	v
+turn	peterson.c	/^volatile int turn = 0;$/;"	v
+turn	swap.c	/^volatile int turn = 0;$/;"	v
+unlock	futex.c	/^void unlock(volatile int *lock) {$/;"	f
+unlock	peterson.c	/^void unlock(int id) {$/;"	f
+unlock	swap.c	/^void unlock(volatile int *mutex) {$/;"	f
+val	clist.c	/^  int val;$/;"	m	struct:cell	file:
+val	list.c	/^  int val;$/;"	m	struct:cell	file:

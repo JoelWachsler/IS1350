@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAX	yield.c	5;"	d	file:
+cntx_done	yield.c	/^static ucontext_t cntx_done;$/;"	v	file:
+cntx_main	yield.c	/^static ucontext_t cntx_main;$/;"	v	file:
+cntx_one	yield.c	/^static ucontext_t cntx_one;$/;"	v	file:
+cntx_two	yield.c	/^static ucontext_t cntx_two;$/;"	v	file:
+done	yield.c	/^void done() {$/;"	f
+done1	yield.c	/^static int done1;$/;"	v	file:
+done2	yield.c	/^static int done2;$/;"	v	file:
+main	switch.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	yield.c	/^int main(int argc, char *argv[]) {$/;"	f
+push	yield.c	/^void push(int p, int i) {$/;"	f
+running	yield.c	/^static int running;$/;"	v	file:
+yield	yield.c	/^void yield() {$/;"	f

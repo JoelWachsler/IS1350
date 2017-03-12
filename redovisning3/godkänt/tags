@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+args	mutexlist.c	/^typedef struct {int start; int stop;} args;$/;"	t	typeref:struct:__anon2	file:
+args	spinlist.c	/^typedef struct {int start; int stop;} args;$/;"	t	typeref:struct:__anon1	file:
+benchDelete	mutexlist.c	/^void *benchDelete(void* arg) {$/;"	f
+benchDelete	spinlist.c	/^void *benchDelete(void* arg) {$/;"	f
+benchInsert	mutexlist.c	/^void *benchInsert(void* arg) {$/;"	f
+benchInsert	spinlist.c	/^void *benchInsert(void* arg) {$/;"	f
+concurrent_test	mutexlist.c	/^void concurrent_test() {$/;"	f
+concurrent_test	spinlist.c	/^void concurrent_test() {$/;"	f
+contains	mutexlist.c	/^bool contains(int item) {$/;"	f
+contains	spinlist.c	/^bool contains(int item) {$/;"	f
+delete	mutexlist.c	/^void delete(int item) {$/;"	f
+delete	spinlist.c	/^void delete(int item) {$/;"	f
+dummy	mutexlist.c	/^node dummy = {INT_MIN, &sentinel, PTHREAD_MUTEX_INITIALIZER};$/;"	v
+dummy	spinlist.c	/^node dummy = {INT_MIN, &sentinel, 0};$/;"	v
+insert	mutexlist.c	/^void insert(int item) {$/;"	f
+insert	spinlist.c	/^void insert(int item) {$/;"	f
+list	mutexlist.c	/^node *list = &dummy;$/;"	v
+list	spinlist.c	/^node *list = &dummy;$/;"	v
+lock	spinlist.c	/^void lock(volatile int *mutex) {$/;"	f
+main	mutexlist.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	spinlist.c	/^int main(int argc, char *argv[]) {$/;"	f
+mutex	mutexlist.c	/^  pthread_mutex_t mutex;$/;"	m	struct:node	file:
+mutex	spinlist.c	/^  int mutex;$/;"	m	struct:node	file:
+next	mutexlist.c	/^  struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
+next	spinlist.c	/^  struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
+node	mutexlist.c	/^typedef struct node {$/;"	s	file:
+node	mutexlist.c	/^} node;$/;"	t	typeref:struct:node	file:
+node	spinlist.c	/^typedef struct node {$/;"	s	file:
+node	spinlist.c	/^} node;$/;"	t	typeref:struct:node	file:
+print_list	mutexlist.c	/^void print_list() {$/;"	f
+print_list	spinlist.c	/^void print_list() {$/;"	f
+procedural_test	mutexlist.c	/^void *procedural_test() {$/;"	f
+procedural_test	spinlist.c	/^void *procedural_test() {$/;"	f
+sentinel	mutexlist.c	/^node sentinel = {INT_MAX, NULL, PTHREAD_MUTEX_INITIALIZER};$/;"	v
+sentinel	spinlist.c	/^node sentinel = {INT_MAX, NULL, 0};$/;"	v
+start	mutexlist.c	/^typedef struct {int start; int stop;} args;$/;"	m	struct:__anon2	file:
+start	spinlist.c	/^typedef struct {int start; int stop;} args;$/;"	m	struct:__anon1	file:
+stop	mutexlist.c	/^typedef struct {int start; int stop;} args;$/;"	m	struct:__anon2	file:
+stop	spinlist.c	/^typedef struct {int start; int stop;} args;$/;"	m	struct:__anon1	file:
+try	spinlist.c	/^int try(volatile int *mutex) {$/;"	f
+unlock	spinlist.c	/^void unlock(volatile int *mutex) {$/;"	f
+val	mutexlist.c	/^  int val;$/;"	m	struct:node	file:
+val	spinlist.c	/^  int val;$/;"	m	struct:node	file:
